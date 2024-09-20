@@ -21,8 +21,9 @@ function AddNoteForm({ addNote }) {
       archived: false,
       createdAt: new Date().toISOString(),
     });
-    setTitle("");
-    setBody("");
+    setTitle(""); // Reset title field
+    setBody(""); // Reset body field
+    setCharLeft(50); // Reset character limit back to 50
   };
 
   return (
