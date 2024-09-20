@@ -1,0 +1,90 @@
+/* Global and body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #222;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #4A90E2;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.navbar-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 30px;
+  padding: 8px 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.search-container:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.search-bar {
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 20px;
+  font-size: 1rem;
+  width: 200px;
+  background-color: transparent;
+}
+
+.search-bar::placeholder {
+  color: #888;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  color: #4A90E2;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.search-button i {
+  transition: color 0.3s ease;
+}
+
+.search-button:hover i {
+  color: #2C6DAD;
+}
+
+/* Add responsiveness */
+@media (max-width: 600px) {
+  .navbar-title {
+    font-size: 1.5rem;
+  }
+
+  .search-bar {
+    width: 150px;
+    font-size: 0.9rem;
+  }
+}
